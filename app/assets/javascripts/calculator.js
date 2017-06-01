@@ -1,4 +1,5 @@
 $(function() {
+
   // Find the form on the page and get ready to do stuff when the submit button is clickec
   var expression = $('#new-form').submit(function(event) {
     // Stop the form from refreshing the page
@@ -43,6 +44,10 @@ $(function() {
       }
     } 
     // return parseInt(stack.pop(), 10);
-    console.log(parseInt(stack.pop(), 10))
+    var result = parseInt(stack.pop(), 10);
+    var resultText = $('#results').text(result)
+
+    console.log(result);
+    console.log(resultText);
   });
 });
