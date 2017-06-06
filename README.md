@@ -2,14 +2,16 @@
 
 This is a simple Reverse Polish Notation Calculator.
 
-Some info about the app:
+Visit the live application: https://rev-pol-not.herokuapp.com/
 
-* Ruby version 2.3.11
+---
 
-* Rails v.5.03
+# Implementation Details:
 
-* System dependencies: RSPec
+* Built using Ruby on Rails (5.02)
 
-To install, clone the repository to your local machine.
+* Single-Page Application using JQuery
 
+* Twitter Bootstrap 4 for front-end styling
 
+* RuboCop for code style enforcement
