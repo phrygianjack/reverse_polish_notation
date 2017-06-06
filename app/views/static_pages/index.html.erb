@@ -1,23 +1,45 @@
-<section class = "rpn_calc">
-  <header class = "header">
-    <h1>RPN</h1>
-
+<section class = 'rpn_calc'>
+  <header class = 'header'>
+    <h1 class='text-center'>Reverse Polish Notation</h1>
   </header>
 
+  <section class = 'main'>
+    <div class='container'>
+      <div class='row justify-content-md-center'>
+        <div class='col-8'>
+          Reverse Polish notation (RPN) is a method for representing expressions in which the operator symbol
+          is placed after the arguments being operated on. Polish notation, in which the operator comes before
+          the operands, was invented in the 1920s by the Polish mathematician Jan Lucasiewicz. In the late 1950s,
+          Australian philosopher and computer scientist Charles L. Hamblin suggested placing the operator after
+          the operands and hence created reverse polish notation.
+          <br />
+          <br />
+          Description from 
+          <%= link_to 'http://mathworld.wolfram.com/ReversePolishNotation.html' do %>
+            Wolfram MathWorld
+          <% end %>
+        </div>
+        <div class='col-8 calculator'>
+          <br />
+          <div class='row justify-content-md-center'>
+            <div class='col col-md-auto' id='input-form'>
+              <form id='input'>
+                <input type='text' class='calculation' placeholder='2 4 - 1 +' />
+              </form>
+            </div>
+          </div>
+          <br />
+          <div class='row justify-content-md-center'>
+            <div id='results' class='col-6 text-center'>
+              Results
+              <!-- Leave this empty for JS to fill -->
+            </div>
+          </div>
+          <br />
+        </div>
 
-  <section class = "main">
-    <div>
-    <form id="new-form">
-      <input type="text" class="calculation" placeholder="2 4 - 1 +" />
-    </form>
-    </div>
-    <div id="results">
-
+      </div>
     </div>
   </section>
 </section>
 
-<section class="author">
-  Built by 
-  <%= link_to 'Jack Anderson', "http://github.com/phrygianjack" %>
-</section>

@@ -1,7 +1,7 @@
 $(function() {
 
   // Find the form on the page and get ready to do stuff when the submit button is clickec
-  var expression = $('#new-form').submit(function(event) {
+  var expression = $('#input').submit(function(event) {
     // Stop the form from refreshing the page
     event.preventDefault();
     // Extract the string from the form box

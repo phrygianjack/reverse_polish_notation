@@ -10,15 +10,26 @@
 
   <body>
     <div id="flex-content-container">
-      <span>BODY</span>
       <%= yield %>
     </div>
 
     <footer class='footer'>
       <div class='container'>
-        Footer
+        <div class='row align-items-center'>
+          <div class='col'>
+            Built by Jack Anderson
+            <br>Using Ruby on Rails</br>
+          </div>
+          <div class='col text-center'>
+            <br>Social</br>
+            <%= link_to 'https://www.github.com/phrygianjack' do %>
+              <%= image_tag('logos/github.png', class: 'social-button') %>
+            <% end %>
+            <br />
+            <br />
+          </div>
         </div>
+      </div>
     </footer>
   </body>
-
 </html>
