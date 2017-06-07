@@ -15,3 +15,5 @@ Visit the live application: https://rev-pol-not.herokuapp.com/
 * Twitter Bootstrap 4 for front-end styling
 
 * RuboCop for code style enforcement
+
+* CI/CD with Travis and Heroku
