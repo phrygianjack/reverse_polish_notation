@@ -29,6 +29,10 @@ Style/BlockComments:
 Style/Documentation:
   Enabled: false
 
+Style/ExtraSpacing:
+  Exclude:
+    - 'config/initializers/carrierwave.rb'
+
 Style/StringLiterals:
   Exclude:
     - 'config/puma.rb'
