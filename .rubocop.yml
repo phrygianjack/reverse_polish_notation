@@ -33,6 +33,9 @@ Style/ExtraSpacing:
   Exclude:
     - 'config/initializers/carrierwave.rb'
 
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
 Style/StringLiterals:
   Exclude:
     - 'config/puma.rb'
