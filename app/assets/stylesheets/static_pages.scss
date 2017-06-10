@@ -1,3 +1,4 @@
+/*The box around the calculator*/
 .calculator {
   background-color: #fff;
   border-radius: .25rem;
@@ -11,6 +12,24 @@
   background-color: #fff;
   font-size: 40px;
 }
+
+/*Placeholder text color for Chrome*/
+.element::-webkit-input-placeholder {
+    color: blue;
+    font-weight: bold;
+}
+
+/*Placeholder text color for FireFox*/
+.element::-moz-placeholder {
+    color: blue;
+    font-weight: bold;
+}
+
+/*Placeholder text color for IE*/
+.element:-ms-input-placeholder {
+    color: blue;
+    font-weight: bold;
+} 
 
 #results {
   font-size: 32px;

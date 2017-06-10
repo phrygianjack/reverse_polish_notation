@@ -12,31 +12,34 @@ $(function() {
     var stack = [];
     for (var i = 0, l = calc.length; i<l; i++){
       var e = calc[i];
+      var val1;
+      var val2;
+      var newValue;
       if (e == '+'){
-        let val1 = parseInt(stack.pop(), 10);
-        let val2 = parseInt(stack.pop(), 10);
-        let newValue = val2 + val1;
+        val1 = parseInt(stack.pop(), 10);
+        val2 = parseInt(stack.pop(), 10);
+        newValue = val2 + val1;
         stack.push(newValue);
         }
       else 
         if ( e == '-' ) {
-          let val1 = parseInt(stack.pop(), 10);
-          let val2 = parseInt(stack.pop(), 10);
-          let newValue = val2 - val1;
+          val1 = parseInt(stack.pop(), 10);
+          val2 = parseInt(stack.pop(), 10);
+          newValue = val2 - val1;
           stack.push(newValue);
         }
       else
         if ( e == '*' ) {
-          let val1 = parseInt(stack.pop(), 10);
-          let val2 = parseInt(stack.pop(), 10);
-          let newValue = val2 * val1;
+          val1 = parseInt(stack.pop(), 10);
+          val2 = parseInt(stack.pop(), 10);
+          newValue = val2 * val1;
           stack.push(newValue);
         }
       else
         if ( e == '/' ) {
-          let val1 = parseInt(stack.pop(), 10);
-          let val2 = parseInt(stack.pop(), 10);
-          let newValue = val2 / val1;
+          val1 = parseInt(stack.pop(), 10);
+          val2 = parseInt(stack.pop(), 10);
+          newValue = val2 / val1;
           stack.push(newValue);
         }
       else {
